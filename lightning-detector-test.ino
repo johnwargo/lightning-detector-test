@@ -90,12 +90,12 @@ void loop() {
   }
   checkTimer();
   // Keep updating the display
-  Serial.print(".");
-  counter += 1;
-  if (counter > counterLimit) {
-    counter = 0;
-    Serial.println();
-  }
+  // Serial.print(".");
+  // counter += 1;
+  // if (counter > counterLimit) {
+  //   counter = 0;
+  //   Serial.println();
+  // }
   // do a little wait here so the ESP32 has time to do housekeeping chores
   // https://randomerrors.dev/posts/2023/esp32-watchdog-got-triggered/
   delay(100);
