@@ -73,6 +73,7 @@ void setup() {
 #if defined(ESP32) || defined(ESP8266)
   attachInterrupt(digitalPinToInterrupt(IRQ_PIN), isr, RISING);
 #else
+  // This is, I think, only for Arduino UNO
   attachInterrupt(/*Interrupt No*/ 0, isr, RISING);
 #endif
 
